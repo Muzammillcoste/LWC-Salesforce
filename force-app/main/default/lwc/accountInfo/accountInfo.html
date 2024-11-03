@@ -1,0 +1,15 @@
+<template>
+    <template if:true={account}>
+        <lightning-card title="Account Information">
+            <div class="slds-p-around_medium">
+                <p><strong>Name:</strong> {account.Name.value}</p>
+                <p><strong>Phone:</strong> {account.Phone.value}</p>
+                <p><strong>Website:</strong> <a href={account.Website.value} target="_blank">{account.Website.value}</a></p>
+                <p><strong>Industry:</strong> {account.Industry.value}</p>
+                <p><strong>Billing City:</strong> {account.BillingCity.value}</p>
+                <p><strong>Billing State:</strong> {account.BillingState.value}</p>
+                <p><strong>Billing Country:</strong> {account.BillingCountry.value}</p>
+            </div>
+        </lightning-card>
+    </template>
+</template>
